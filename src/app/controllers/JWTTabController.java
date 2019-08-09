@@ -126,7 +126,7 @@ public class JWTTabController implements IMessageEditorTab {
 			jwtVT.updateSetView(algoType);
 		} catch (JWTVerificationException e) {
 			//ConsoleOut.output("Verification failed (" + e.getMessage() + ")");
-			jwtTM.setVerificationLabel(Strings.verificationWrongKey);
+			jwtTM.setVerificationLabel(Strings.verificationInvalidKey);
 			jwtTM.setVerificationColor(Settings.colorInvalid);
 			jwtTM.setVerificationResult(e.getMessage());
 			jwtVT.updateSetView(algoType);
